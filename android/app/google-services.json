@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "906161312534",
+    "firebase_url": "https://waaaagleapp.firebaseio.com",
+    "project_id": "waaaagleapp",
+    "storage_bucket": "waaaagleapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906161312534:android:81546e2a4313c1132b7637",
+        "android_client_info": {
+          "package_name": "com.wagleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906161312534-st2n3ghovs8jmkv62v6iotiaskv17kjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBighMQZavDAeltRFJ0yM_5PshHdvzxRoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906161312534-st2n3ghovs8jmkv62v6iotiaskv17kjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
