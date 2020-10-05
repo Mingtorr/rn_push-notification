@@ -35,7 +35,7 @@ export default class App extends Component {
   onPressCancelNotification = () => {
     this.localNotify.cancelAllLocalNotification();
   };
-
+  /*
   onPressSendNotification = () => {
     const options = {
       soundName: 'default', //'notification1.mp3',
@@ -45,11 +45,31 @@ export default class App extends Component {
 
     this.localNotify.showNotification(
       1,
-      'App Notification',
+      '창남창녀',
       'Local Notification',
       {}, // data
       options, // options
     );
+  };
+*/
+  onPressSendNotification = () => {
+    console.log('hi');
+    fetch('https://fcm.googleapis.com/fcm/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization:
+          'key=AAAA0vtsUxY:APA91bGoEh1F3F7n94wN1TJUXZxl1_zOwyUqgpAss1GMwg0--DBhHBSVcExsNqHb4u88nuPvCH6HcEcKV7etYqR7aNcr_ZhzNkbA3ztIqyvsmuEmI67q2uPNDNu95wGjT7RknIkreX64',
+      },
+      body: JSON.stringify({
+        to:
+          'fFX_ne3STa6aPP2IHbCOsD:APA91bEO5dRFAC0p6t3KLbyHkOft3_3j5NqxHCr0aEa0-iYX123ycCquO_dEIym2r3ZZ3sBxtjEsEjXOvrZ6rEEfl3h_ZTRxiwWV8hl1hn2PicKdZ4Jw11uGlb0QHZuL6Zu8_DT6_ZPQ',
+        priority: 'high',
+        notification: {
+          body: 'hiveeeeeee2221221',
+        },
+      }),
+    });
   };
 
   render() {
